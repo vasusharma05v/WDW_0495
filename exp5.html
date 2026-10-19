@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form - Experiment 6</title>
+</head>
+<body>
+
+    <h1>Experiment 5: Student Registration Form</h1>
+    <hr>
+
+    <!-- Form attributes applied: action, method -->
+    <form action="submit_form.php" method="POST">
+        
+        <h2>Personal Details</h2>
+
+        <p>
+            <label for="fullname">Full Name:</label><br>
+            <!-- Attributes applied: placeholder, required -->
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        </p>
+
+        <p>
+            <label for="rollno">Roll Number:</label><br>
+            <input type="text" id="rollno" name="rollno" placeholder="e.g., 2026101001" required>
+        </p>
+
+        <p>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required>
+        </p>
+
+        <p>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </p>
+
+        <h2>Contact Information</h2>
+
+        <p>
+            <label for="email">Student Email ID (Built-in HTML Validation):</label><br>
+            <!-- Native HTML5 Email Validation via type="email" and required attribute -->
+            <input type="email" id="email" name="email" placeholder="student@example.com" required>
+        </p>
+
+        <p>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="10-digit Mobile Number" required>
+        </p>
+
+        <h2>Academic Details</h2>
+
+        <p>
+            <label for="course">Course / Branch:</label><br>
+            <select id="course" name="course" required>
+                <option value="">-- Select Course --</option>
+                <option value="cse">B.Tech Computer Science & Engineering</option>
+                <option value="ece">B.Tech Electronics & Communication</option>
+                <option value="me">B.Tech Mechanical Engineering</option>
+                <option value="ce">B.Tech Civil Engineering</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="address">Permanent Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="40" placeholder="Enter complete address..." required></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Submit Registration</button>
+            <button type="reset">Reset Form</button>
+        </p>
+
+    </form>
+
+</body>
+</html>

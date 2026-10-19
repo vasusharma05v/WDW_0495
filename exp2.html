@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News Portal</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header & Navigation Bar */
+        header {
+            background-color: #1a252f;
+            color: #ffffff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #f39c12;
+        }
+
+        /* Main Container Layout */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        /* Image Styling */
+        .news-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Video Container (Responsive iFrame) */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1a252f;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Global Daily News</h1>
+        <p>Your Trusted Source for Latest Updates</p>
+    </header>
+
+    <!-- Navigation Menu (Hyperlinks & Navigation Structure) -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#featured">Featured Article</a>
+        <a href="#video-news">Video Coverage</a>
+        <a href="#podcast">Audio Podcast</a>
+        <a href="https://www.bbc.com" target="_blank">External News (BBC)</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- Featured Article Section (Images) -->
+        <section id="featured">
+            <h2>Breaking News: Tech Summit 2026 Announcements</h2>
+            <img src="https://m.media-amazon.com/images/M/MV5BNGYwNDlmZDgtMDg1Yi00N2JmLTk0NzQtNWVkN2NiMTQxY2RlXkEyXkFqcGc@._V1_.jpg" alt="News Image" class="news-img">
+            <p>
+                Today marked the opening of the annual Global Tech Summit. Industry leaders gathered to discuss innovations in AI, renewable energy, and future digital infrastructures.
+            </p>
+            <p>
+                Read more about full global reports at <a href="https://www.bbc.com" target="_blank">Visit BBC News</a>.
+            </p>
+        </section>
+
+        <!-- Video News Section (YouTube Embed) -->
+        <section id="video-news">
+            <h2>Live Video Coverage</h2>
+            <p>Watch the embedded video report below:</p>
+            <div class="video-container">
+                <!-- Replace 'dQw4w9WgXcQ' with your desired YouTube Video ID -->
+                <iframe 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Audio Podcast Section (Audio Tag) -->
+        <section id="podcast">
+            <h2>Daily News Podcast</h2>
+            <p>Listen to today's news bulletin on the go:</p>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <!-- Local Video Section (Video Tag) -->
+        <section id="local-video">
+            <h2>Local News Clip</h2>
+            <video width="100%" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Daily News Portal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

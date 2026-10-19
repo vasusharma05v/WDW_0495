@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Room Booking Form - Experiment 4</title>
+</head>
+<body>
+
+    <h1>Experiment 4: Hotel Room Booking Form</h1>
+    <hr>
+
+    <form action="#" method="post">
+        
+        <h2>Guest Information</h2>
+        
+        <p>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        </p>
+
+        <p>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+        </p>
+
+        <p>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="1234567890" required>
+        </p>
+
+        <h2>Booking Details</h2>
+
+        <p>
+            <label for="checkin">Check-in Date:</label><br>
+            <input type="date" id="checkin" name="checkin" required>
+        </p>
+
+        <p>
+            <label for="checkout">Check-out Date:</label><br>
+            <input type="date" id="checkout" name="checkout" required>
+        </p>
+
+        <p>
+            <label for="roomtype">Room Type:</label><br>
+            <select id="roomtype" name="roomtype">
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="deluxe">Deluxe Suite</option>
+                <option value="presidential">Presidential Suite</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="guests">Number of Guests:</label><br>
+            <input type="number" id="guests" name="guests" min="1" max="10" value="1">
+        </p>
+
+        <h2>Additional Services</h2>
+        
+        <p>
+            <input type="checkbox" id="breakfast" name="services" value="breakfast">
+            <label for="breakfast">Include Daily Breakfast</label><br>
+            
+            <input type="checkbox" id="pickup" name="services" value="pickup">
+            <label for="pickup">Airport Pick-up</label><br>
+            
+            <input type="checkbox" id="wifi" name="services" value="wifi">
+            <label for="wifi">High-Speed Wi-Fi</label>
+        </p>
+
+        <p>
+            <label for="requests">Special Requests / Preferences:</label><br>
+            <textarea id="requests" name="requests" rows="4" cols="40" placeholder="Specify any special requirements (e.g., quiet room, high floor)..."></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Book Room</button>
+            <button type="reset">Reset Form</button>
+        </p>
+
+    </form>
+
+</body>
+</html>
